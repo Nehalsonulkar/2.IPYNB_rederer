@@ -1,0 +1,15 @@
+# This section specifies the build system requirements and backend
+[build-system]
+requires = ['setuptools>=42.0',"where"]
+build-backand = "setuptools.build_meta"
+
+# This section specifies options for pytest
+[tool.pytest.ini_options]
+testpath = [
+    "tests",
+]
+
+# This section specifies options for mypy type checker
+[tool.mypy]
+mypy_path = "src"
+ignore_missing_import = true
